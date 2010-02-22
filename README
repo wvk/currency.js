@@ -1,0 +1,7 @@
+currency.js
+a small, prototype.js-based JS library for handling currency amounts in web forms
+
+(c) copyright 2010 by Willem van Kerkhof <wvk@consolving.de>
+released under the terms of the GNU General Public License (GPL) v. 2.0
+
+See source code vor usage examples.
