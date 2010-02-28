@@ -104,16 +104,10 @@ function $pM(val) {
 }
 
 /*
-  frac: helper function that formats a floating point number essentially
-        the same way as sprintf('%.2f', val) would do in other languages
- */
-function frac(val) {
-  var val = Math.round((val % 1.0) * 100);
-  if (val == 100)
-    return '00';
-  else if (val < 10)
-    return  '0' + val;
-  else
-    return val;
-}
+  monetize: reformat the value of an input field containing a 'raw' value to a currency amount
 
+  * an empty or invalid field will be formatted as if it contained a zero value
+*/
+function monetize(element) {
+  element.value = ($pM(element.value) || $M(0)).to_val();
+}
